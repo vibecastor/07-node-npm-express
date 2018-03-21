@@ -75,26 +75,25 @@ _Your repository must include:_
 _Your README.md must include:_
 
 ```md
-# Project Name
+# Lab 07 - NodeJS & NPM & Express
 
-**Author**: Your Name Goes Here
+**Author**: Mike & Collin
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
+This app sets up a server using the express module of Node.js and allows users to access the website through the server. 
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+They must install express on their machine, then run a node server on their local host. They must create a server javascript file within their project to configure and instantiate express, and listen for server requests. Then, they can visit that local host in their browser.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+HTML, CSS, Javascript, JQuery, Handlebars, Node.js, Express
 
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
-
+03-21-2018 9:45am - Application now runs on the local host.
+            10:37am - Comments inserted and completed.
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
--->
-```
+
+Sams' Demo
