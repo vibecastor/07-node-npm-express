@@ -1,0 +1,22 @@
+{
+  "name": "mike-collin",
+  "version": "1.0.0",
+  "description": "lab-07",
+  "main": "server.js",
+  "scripts": {
+    "test": "hello_world?",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "mike-collin"
+  },
+  "keywords": [
+    "project"
+  ],
+  "author": "mike castor and collin meredith",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
