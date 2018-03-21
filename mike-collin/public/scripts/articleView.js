@@ -74,7 +74,7 @@ articleView.setTeasers = () => {
 };
 
 // COMMENT: When/where is this function invoked? What event ultimately triggers its execution? Explain the sequence of code execution when this function is invoked.
-// PUT YOUR RESPONSE HERE
+// This function is called on pageload of new.html. When this function is invoked, it shows tab content, hides the export field, and then listens for a focus event on the element (an input field) with id article-json. At that point, it selects the text within that field. Next, it listens for change on several parts of the new form element. When it receives this change, it invokes articleView.create, which creates an empty article and populates it with the user input. It also sets up a listener for the submit event on new form, which, when triggered, will invoke articleView.submit which overwrites the article object with the information present when submit is triggered.
 articleView.initNewArticlePage = () => {
   $('.tab-content').show();
   $('#export-field').hide();
@@ -87,7 +87,7 @@ articleView.initNewArticlePage = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// This function is called inside initNewArticlePage when a change occurs in the new form element. The user has to make a change on one of the form fields to trigger this.
 articleView.create = () => {
   let article;
   $('#articles').empty();
@@ -112,7 +112,8 @@ articleView.create = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// This function is also called within initNewArticlePage, this time when the new form element receives a submit event.
+
 articleView.submit = event => {
   event.preventDefault();
   let article = new Article({
@@ -125,7 +126,7 @@ articleView.submit = event => {
   });
 
   // COMMENT: Where is this function defined? When is this function called? What event ultimately triggers its execution?
-  // PUT YOUR RESPONSE HERE
+  // This function is defined at the end of article.js. It's called within articleView.js, right below this comment. It's ultimately triggered when the user triggers a submit event on the new form element. 
   article.insertRecord();
 }
 

@@ -10,11 +10,6 @@ const app = express();
 //defining the directory
 app.use(express.static('./public'));
 
-//setting up a route
-
-
-
-// REVIEW: There is a package here called body-parser, which is used by the provided POST route. Be sure to install that and save it as a dependency after you create your package.json.
 
 const bodyParser = require('body-parser').urlencoded({extended: true});
 const PORT = process.env.PORT || 3000;
